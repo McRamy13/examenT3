@@ -4,7 +4,10 @@
  */
 package exament3;
 
+import java.io.IOException;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -16,7 +19,24 @@ import javax.swing.JOptionPane;
 public class VentanaIconos extends javax.swing.JFrame {
 
     Random generadorLetras = new Random();
+    int num1;
+    int num2;
+    int num3;
+    int num4;
+    int num5;
+    int num6;
+    int num7;
+    int num8;
+    int num9;
+    int num10;
+    int num11;
+    int num12;
+    int num13;
+    int num14;
+    int num15;
+    int num16;
     //ImageIcon icono1 =  new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/A.png"))));
+
     public VentanaIconos() {
         initComponents();
     }
@@ -44,46 +64,42 @@ public class VentanaIconos extends javax.swing.JFrame {
         jToggleButtonI14 = new javax.swing.JToggleButton();
         jToggleButtonI11 = new javax.swing.JToggleButton();
         jToggleButtonI10 = new javax.swing.JToggleButton();
-        jToggleButtonI6 = new javax.swing.JToggleButton();
         jToggleButtonI16 = new javax.swing.JToggleButton();
         jToggleButtonI12 = new javax.swing.JToggleButton();
-        jToggleButtonI7 = new javax.swing.JToggleButton();
         jToggleButtonI5 = new javax.swing.JToggleButton();
         jToggleButtonI2 = new javax.swing.JToggleButton();
-        jToggleButtonI8 = new javax.swing.JToggleButton();
         jToggleButtonI15 = new javax.swing.JToggleButton();
+        jToggleButtonI7 = new javax.swing.JToggleButton();
+        jToggleButtonI6 = new javax.swing.JToggleButton();
+        jToggleButtonI8 = new javax.swing.JToggleButton();
         jPanelBotones = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jLabel3.setText("jLabel3");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout jPanelMuestraLayout = new javax.swing.GroupLayout(jPanelMuestra);
         jPanelMuestra.setLayout(jPanelMuestraLayout);
         jPanelMuestraLayout.setHorizontalGroup(
             jPanelMuestraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMuestraLayout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3)
-                .addGap(62, 62, 62)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel4)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanelMuestraLayout.setVerticalGroup(
             jPanelMuestraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,7 +110,7 @@ public class VentanaIconos extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jToggleButtonI9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
@@ -153,13 +169,6 @@ public class VentanaIconos extends javax.swing.JFrame {
             }
         });
 
-        jToggleButtonI6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jToggleButtonI6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButtonI6ActionPerformed(evt);
-            }
-        });
-
         jToggleButtonI16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
         jToggleButtonI16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,13 +183,6 @@ public class VentanaIconos extends javax.swing.JFrame {
             }
         });
 
-        jToggleButtonI7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jToggleButtonI7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButtonI7ActionPerformed(evt);
-            }
-        });
-
         jToggleButtonI5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
         jToggleButtonI5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,17 +192,31 @@ public class VentanaIconos extends javax.swing.JFrame {
 
         jToggleButtonI2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
 
-        jToggleButtonI8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
-        jToggleButtonI8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButtonI8ActionPerformed(evt);
-            }
-        });
-
         jToggleButtonI15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
         jToggleButtonI15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButtonI15ActionPerformed(evt);
+            }
+        });
+
+        jToggleButtonI7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+        jToggleButtonI7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonI7ActionPerformed(evt);
+            }
+        });
+
+        jToggleButtonI6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+        jToggleButtonI6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonI6ActionPerformed(evt);
+            }
+        });
+
+        jToggleButtonI8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Z.png"))); // NOI18N
+        jToggleButtonI8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonI8ActionPerformed(evt);
             }
         });
 
@@ -212,71 +228,80 @@ public class VentanaIconos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
-                        .addComponent(jToggleButtonI13, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI14, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI15, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI16, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jToggleButtonI1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
-                        .addComponent(jToggleButtonI5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jToggleButtonI8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
+                                .addComponent(jToggleButtonI1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jToggleButtonI2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
+                                .addComponent(jToggleButtonI5, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jToggleButtonI7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jToggleButtonI3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jToggleButtonI4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
                         .addComponent(jToggleButtonI9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jToggleButtonI10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jToggleButtonI11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jToggleButtonI12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
-                        .addGap(86, 86, 86)
-                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jToggleButtonI2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
-                                .addGap(86, 86, 86)
-                                .addComponent(jToggleButtonI3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jToggleButtonI4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                        .addComponent(jToggleButtonI13, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jToggleButtonI14, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jToggleButtonI15, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jToggleButtonI16, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanelBotonIconoLayout.setVerticalGroup(
             jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButtonI2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButtonI5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI6, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButtonI9, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI10, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI11, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jToggleButtonI12, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jToggleButtonI13, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jToggleButtonI14, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jToggleButtonI16, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jToggleButtonI15, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(168, Short.MAX_VALUE))
+                    .addGroup(jPanelBotonIconoLayout.createSequentialGroup()
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jToggleButtonI1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jToggleButtonI5, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jToggleButtonI7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jToggleButtonI6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(jToggleButtonI8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jToggleButtonI9, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jToggleButtonI11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jToggleButtonI12, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jToggleButtonI10, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelBotonIconoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jToggleButtonI13, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButtonI14, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButtonI15, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jToggleButtonI16, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
+
+        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -284,8 +309,6 @@ public class VentanaIconos extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jButton2.setText("jButton2");
 
         javax.swing.GroupLayout jPanelBotonesLayout = new javax.swing.GroupLayout(jPanelBotones);
         jPanelBotones.setLayout(jPanelBotonesLayout);
@@ -305,7 +328,7 @@ public class VentanaIconos extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -316,10 +339,12 @@ public class VentanaIconos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanelMuestra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanelBotonIcono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanelMuestra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                        .addComponent(jPanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -331,7 +356,7 @@ public class VentanaIconos extends javax.swing.JFrame {
                     .addComponent(jPanelBotonIcono, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -383,80 +408,126 @@ public class VentanaIconos extends javax.swing.JFrame {
     private void jToggleButtonI16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonI16ActionPerformed
     }//GEN-LAST:event_jToggleButtonI16ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-            for (int contador = 0; contador < 16; contador++) {
-                int cifras = generadorLetras.nextInt(16);
-                if (cifras == 0) {
-                    char letra = 'a';
-                    //jLabel1.setIcon(icono1);
-                } else {
-                    if (cifras == 1) {
-                        char letra = 'b';
-                    } else {
-                        if (cifras == 2) {
-                            char letra = 'c';
-                        } else {
-                            if (cifras == 3) {
-                                char letra = 'd';
-                            } else {
-                                if (cifras == 4) {
-                                    char letra = 'e';
-                                } else {
-                                    if (cifras == 5) {
-                                        char letra = 'e';
-                                    } else {
-                                        if (cifras == 6) {
-                                            char letra = 'f';
-                                        } else {
-                                            if (cifras == 7) {
-                                                char letra = 'g';
-                                            } else {
-                                                if (cifras == 8) {
-                                                    char letra = 'h';
-                                                } else {
-                                                    if (cifras == 9) {
-                                                        char letra = 'i';
-                                                    } else {
-                                                        if (cifras == 10) {
-                                                            char letra = 'j';
-                                                        } else {
-                                                            if (cifras == 11) {
-                                                                char letra = 'k';
-                                                            } else {
-                                                                if (cifras == 12) {
-                                                                    char letra = 'l';
-                                                                } else {
-                                                                    if (cifras == 13) {
-                                                                        char letra = 'm';
-                                                                    } else {
-                                                                        if (cifras == 14) {
-                                                                            char letra = 'o';
-                                                                        } else {
-                                                                            char letra = 'p';
-                                                                        }
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-               
-                }
-              
+        char letra;
+        for (int contador = 0; contador < 16; contador++) {
+
+
+
+
+            jToggleButtonI1.setEnabled(true);
+            jToggleButtonI2.setEnabled(true);
+            jToggleButtonI3.setEnabled(true);
+            jToggleButtonI4.setEnabled(true);
+            jToggleButtonI5.setEnabled(true);
+            jToggleButtonI6.setEnabled(true);
+            jToggleButtonI7.setEnabled(true);
+            jToggleButtonI8.setEnabled(true);
+            jToggleButtonI9.setEnabled(true);
+            jToggleButtonI10.setEnabled(true);
+            jToggleButtonI11.setEnabled(true);
+            jToggleButtonI12.setEnabled(true);
+            jToggleButtonI13.setEnabled(true);
+            jToggleButtonI14.setEnabled(true);
+            jToggleButtonI15.setEnabled(true);
+            jToggleButtonI16.setEnabled(true);
+
+            num1 = (generadorLetras.nextInt(16) + 65);
+            num2 = (generadorLetras.nextInt(16) + 65);
+            num3 = (generadorLetras.nextInt(16) + 65);
+            num4 = (generadorLetras.nextInt(16) + 65);
+            num5 = (generadorLetras.nextInt(16) + 65);
+            num6 = (generadorLetras.nextInt(16) + 65);
+            num7 = (generadorLetras.nextInt(16) + 65);
+            num8 = (generadorLetras.nextInt(16) + 65);
+            num9 = (generadorLetras.nextInt(16) + 65);
+            num10 = (generadorLetras.nextInt(16) + 65);
+            num11 = (generadorLetras.nextInt(16) + 65);
+            num12 = (generadorLetras.nextInt(16) + 65);
+            num13 = (generadorLetras.nextInt(16) + 65);
+            num14 = (generadorLetras.nextInt(16) + 65);
+            num15 = (generadorLetras.nextInt(16) + 65);
+            num16 = (generadorLetras.nextInt(16) + 65);
+
+
+            try {
+                jToggleButtonI1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num1 + ".png"))));
+                jToggleButtonI2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num2 + ".png"))));
+                jToggleButtonI3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num3 + ".png"))));
+                jToggleButtonI4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num4 + ".png"))));
+                jToggleButtonI5.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num5 + ".png"))));
+                jToggleButtonI6.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num6 + ".png"))));
+                jToggleButtonI7.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num7 + ".png"))));
+                jToggleButtonI8.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num8 + ".png"))));
+                jToggleButtonI9.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num9 + ".png"))));
+                jToggleButtonI10.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num10 + ".png"))));
+                jToggleButtonI11.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num11 + ".png"))));
+                jToggleButtonI12.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num12 + ".png"))));
+                jToggleButtonI13.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num13 + ".png"))));
+                jToggleButtonI14.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num14 + ".png"))));
+                jToggleButtonI15.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num15 + ".png"))));
+                jToggleButtonI16.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num16 + ".png"))));
+            } catch (IOException ex) {
+                Logger.getLogger(VentanaIconos.class.getName()).log(Level.SEVERE, null, ex);
             }
-        
-          
-                           
 
+
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        for (int contador = 0; contador < 16; contador++) {
+
+            jToggleButtonI1.setEnabled(false);
+            jToggleButtonI2.setEnabled(false);
+            jToggleButtonI3.setEnabled(false);
+            jToggleButtonI4.setEnabled(false);
+            jToggleButtonI5.setEnabled(false);
+            jToggleButtonI6.setEnabled(false);
+            jToggleButtonI7.setEnabled(false);
+            jToggleButtonI8.setEnabled(false);
+            jToggleButtonI9.setEnabled(false);
+            jToggleButtonI10.setEnabled(false);
+            jToggleButtonI11.setEnabled(false);
+            jToggleButtonI12.setEnabled(false);
+            jToggleButtonI13.setEnabled(false);
+            jToggleButtonI14.setEnabled(false);
+            jToggleButtonI15.setEnabled(false);
+            jToggleButtonI16.setEnabled(false);
+
+            jToggleButtonI1.setSelected(false);
+            jToggleButtonI2.setSelected(false);
+            jToggleButtonI3.setSelected(false);
+            jToggleButtonI4.setSelected(false);
+            jToggleButtonI5.setSelected(false);
+            jToggleButtonI6.setSelected(false);
+            jToggleButtonI7.setSelected(false);
+            jToggleButtonI8.setSelected(false);
+            jToggleButtonI9.setSelected(false);
+            jToggleButtonI10.setSelected(false);
+            jToggleButtonI11.setSelected(false);
+            jToggleButtonI12.setSelected(false);
+            jToggleButtonI13.setSelected(false);
+            jToggleButtonI14.setSelected(false);
+            jToggleButtonI15.setSelected(false);
+            jToggleButtonI16.setSelected(false);
+
+            num1 = (generadorLetras.nextInt(16) + 65);
+            num2 = (generadorLetras.nextInt(16) + 65);
+            num3 = (generadorLetras.nextInt(16) + 65);
+            num4 = (generadorLetras.nextInt(16) + 65);
+
+            try {
+                jLabel1.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num1 + ".png"))));
+                jLabel2.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num2 + ".png"))));
+                jLabel3.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num3 + ".png"))));
+                jLabel4.setIcon(new ImageIcon(ImageIO.read(getClass().getResource("/imagenes/" + (char) num4 + ".png"))));
+                
+            } catch (IOException ex) {
+                Logger.getLogger(VentanaIconos.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
